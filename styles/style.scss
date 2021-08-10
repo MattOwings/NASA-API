@@ -13,7 +13,6 @@ body {
 
 #title, #nasa-title {
     font-size: 2.5rem;
-    text-decoration: underline;
     text-align: center;
     margin: 1rem;
 }
@@ -46,5 +45,35 @@ body {
             width: 100%;
             height: 100%;
         }
-    }    
+    }
+
+    #info {
+        font-size: 1.5rem;
+        margin-top: 5rem;
+        max-width: 85%;
+        text-align: center;
+    }
+
+    #credits {
+        font-size: 2rem;
+        transition: 0.5s;
+        &:hover {
+            color: red;
+            font-size: 2.25rem;
+        }
+    }
+
+    .git {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    #github {
+        text-align: center;
+        font-size: 2rem;
+        transition: 0.5s;
+        &:hover {
+            color: red;
+            font-size: 2.25rem;
+        }
+    }
 }

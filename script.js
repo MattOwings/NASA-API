@@ -25,7 +25,7 @@ async function sendApiRequest() {
 const useApiData = (data) => {
 
     // Title of the Picture of the Day Fetched from the API
-    document.querySelector("#nasa-title").innerHTML = data.title;
+    document.querySelector("#nasa-title").innerHTML = `Today's title: "${data.title}"`;
 
     // Text Explaination Fetched from the API
     document.querySelector("#explaination").innerHTML = data.explanation;
