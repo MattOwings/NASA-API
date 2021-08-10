@@ -2,10 +2,11 @@
 
 # NASA-API
 
-This Web Application accesses the NASA API, Fetches JSON data, and displays the data.
+This Web Application uses the NASA API, Fetches JSON data through an HTTP Request, and displays the data on the front-end. 
 
 # Technologies Used:
 - API Fetch
+- HTTP
 - JSON
 - DOM Manipulation (to display the JSON data!)
 - JavaScript ES6+
