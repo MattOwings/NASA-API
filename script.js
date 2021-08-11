@@ -4,7 +4,6 @@
 sendApiRequest(); 
 // Sends an API Fetch Request to the NASA API to retrieve the JSON information
 
-
 // Async
 async function sendApiRequest() {
     // The API Key to connect to the NASA API
@@ -14,6 +13,7 @@ async function sendApiRequest() {
     
     //console.log(response) // Should give a 200 OK
 
+    // Await request
     let data = await response.json(); // Waits for the API to send JSON Data to display
 
     // console.log(data); // The JSON Data
@@ -33,6 +33,18 @@ const useApiData = (data) => {
     // The Image Fetched from the API
     document.querySelector("#url").innerHTML = `<img src=${data.hdurl} alt="NASA Astronomy Picture of the Day"></img>`
 
+    // Transfer the JSON data into numbered month
+    let year = data.date.substring(0,4);
+    let monthNumber = data.date.substring(5,7);
+    let day = data.date.substring(8,10);
+
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    
+    let num = Number(monthNumber); // Converts JSON string into a type int
+    let month = months[num-1];
+
+    // console.log(month)
+
     // The Date Fetched from the API
-    document.querySelector("#date").innerHTML = data.date;
+    document.querySelector("#date").innerHTML = `${month} ${day}, ${year}`;
 }

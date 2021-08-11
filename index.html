@@ -9,26 +9,33 @@
 
     <title>NASA API</title>
 
-    <!--<link rel="stylesheet" href="/styles/style.css">-->
-    <link rel="stylesheet" href="https://mattowings.github.io/NASA-API/styles/style.css">
+    <!-- Animate.css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="/styles/style.css">
+    <!--<link rel="stylesheet" href="https://mattowings.github.io/NASA-API/styles/style.css">-->
 
 </head>
 <body>
-    <h1 id="title">NASA API<br>Astronomy Picture of the Day</h1>
+    <h1 id="title" class="animate__animated animate__backInDown">NASA API<br>Astronomy Picture of the Day</h1>
 
     <div id="main-div">
         <h2 id="nasa-title"></h2>
+
+        <h2 id="date"></h2>
         
         <h2 id="explaination"><!----></h2>
         <div id="url">
             <!-- Main Picture -->
         </div>
-        <h2 id="date"></h2>
 
         <h3 id="info">The NASA Astronomy Picture of the Day changes every single day and information is received through JSON Data in a Fetch API Request to the NASA API.</h3>
-        <h2><a id="credits" href="https://api.nasa.gov/">https://api.nasa.gov/</a></h2>
+        <h2><a id="credits" href="https://apod.nasa.gov/apod/archivepix.html" target="_blank">https://apod.nasa.gov</a></h2>
 
-        <h2 class="git"><a id="github" href="https://github.com/MattOwings/NASA-API">Github Repository</a></h2>
+        <h2 id="spacing">. . . . .</h2>
+
+        <h2 class="matt">Web Application by Matthew Owings</h2>
+        <h2 class="git"><a id="github" href="https://github.com/MattOwings/NASA-API" target="_blank">Github Repository</a></h2>
     </div>
 
     <script src="script.js"></script>
