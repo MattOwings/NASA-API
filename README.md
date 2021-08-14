@@ -1,8 +1,7 @@
 # Hosted Link: https://mattowings.github.io/NASA-API/
 
 # NASA-API
-
-This Web Application uses the NASA API, Fetches JSON data through an HTTP Request, and displays the data on the front-end. 
+The NASA Astronomy Picture of the Day fetched through the NASA API and displayed on this Web Application. 
 
 # Technologies Used:
 - API Fetch

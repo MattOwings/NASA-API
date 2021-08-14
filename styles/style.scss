@@ -13,7 +13,7 @@ body {
 }
 
 #title, #nasa-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     margin: 1rem;
 }
@@ -26,7 +26,7 @@ body {
     flex-direction: column;
 
     #explaination, #date, #credits {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -51,18 +51,17 @@ body {
     }
 
     #info {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-top: .5rem;
         max-width: 85%;
         text-align: center;
     }
 
     #credits {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         transition: 0.5s;
         &:hover {
             color: cyan;
-            font-size: 2.65rem;
         }
     }
 
@@ -71,21 +70,20 @@ body {
     }
     #github {
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         transition: 0.5s;
         &:hover {
             color: cyan;
-            font-size: 2.65rem;
         }
     }
     #spacing {
-        font-size: 3rem;
+        font-size: 1rem;
         text-align: center;
         margin-top: 2rem;
     }
     .matt {
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-top: 3rem;
     }
 }
