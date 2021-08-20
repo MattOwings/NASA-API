@@ -16,7 +16,7 @@ async function sendApiRequest() {
     // Await request
     let data = await response.json(); // Waits for the API to send JSON Data to display
 
-    // console.log(data); // The JSON Data
+    console.log(data); // The JSON Data
 
     useApiData(data); // Sends the data into a function to be displayed
 }
@@ -30,8 +30,22 @@ const useApiData = (data) => {
     // Text Explaination Fetched from the API
     document.querySelector("#explaination").innerHTML = data.explanation;
     
+    // console.log(data.media_type) // file type
+
     // The Image Fetched from the API
-    document.querySelector("#url").innerHTML = `<img src=${data.hdurl} alt="NASA Astronomy Picture of the Day"></img>`
+    if (data.media_type != "video") {
+
+        let remImg = document.getElementById("vid-url");
+        remImg.remove(); // Removes the video div because the source is an image
+
+        document.querySelector("#url").innerHTML = `<img src=${data.hdurl} alt="NASA Astronomy Picture of the Day"></img>`
+    } else {
+
+        let remImg = document.getElementById("url");
+        remImg.remove(); // Removes the image div because the source is a video
+
+        document.querySelector("#vid-url").innerHTML = `<iframe id="vid" src=${data.url} alt="NASA Video"></iframe>`
+    }
 
     // Transfer the JSON data into numbered month
     let year = data.date.substring(0,4);

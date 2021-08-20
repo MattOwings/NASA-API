@@ -87,3 +87,14 @@ body {
         margin-top: 3rem;
     }
 }
+
+#vid-url {
+    background-color: rgb(0, 0, 0);
+    width: 85%;
+    border: .75rem solid rgb(0, 0, 0);
+    border-radius: 1.5rem;
+    iframe {
+        width: 99.5%;
+        height: 40rem;
+    }
+}
